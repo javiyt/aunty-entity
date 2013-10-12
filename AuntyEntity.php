@@ -49,7 +49,7 @@ class OpenCalais {
 		return $results;
 	}
 	
-	private function Req() {
+	private function apiReq() {
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $this->api);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
